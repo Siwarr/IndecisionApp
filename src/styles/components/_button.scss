@@ -1,0 +1,43 @@
+// BIG what shall i do button
+.big-button {
+    background: $purple;
+    border: none;
+    border-bottom: .6rem solid darken($purple, 10%);
+    border-left: .4rem solid darken($purple, 10%);
+    color: whitesmoke;
+    font-size: $l-size;
+    margin-bottom: $s-size;
+    padding: 2.4rem;
+    width: 100%;
+}
+
+.big-button:disabled {
+    opacity: 0.6;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }   
+}
+
+// all other buttons
+.button {
+    background: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple, 10%);
+    color: whitesmoke;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+
+// using the -- instead of __ is because it is a modifier to the original. So we are taking the button style
+// and modyifying it into the new link style based off of the original. 
